@@ -19,6 +19,7 @@ test = [
 ]
 
 [project.scripts]
+file-hash = "daily_tools.file_hash:main"
 text-stats = "daily_tools.text_stats:main"
 
 [tool.pytest.ini_options]

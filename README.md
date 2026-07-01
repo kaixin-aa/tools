@@ -13,6 +13,15 @@ python -m pip install -e ".[test]"
 
 ## Tools
 
+### file-hash
+
+Calculate file or stdin digests with standard-library hash algorithms.
+
+```bash
+file-hash README.md
+python -m daily_tools.file_hash --algorithm md5 README.md TOOL_INDEX.md
+```
+
 ### text-stats
 
 Summarize text from one or more files, or from standard input.
