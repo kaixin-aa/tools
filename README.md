@@ -13,6 +13,15 @@ python -m pip install -e ".[test]"
 
 ## Tools
 
+### csv-select
+
+Extract selected columns from a CSV file or from standard input.
+
+```bash
+csv-select name email --file contacts.csv
+python -m daily_tools.csv_select city country --file addresses.csv --delimiter ";"
+```
+
 ### file-hash
 
 Calculate file or stdin digests with standard-library hash algorithms.
