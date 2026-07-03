@@ -13,6 +13,15 @@ python -m pip install -e ".[test]"
 
 ## Tools
 
+### json-format
+
+Format JSON from a file or from standard input.
+
+```bash
+json-format --file payload.json
+python -m daily_tools.json_format --minify --sort-keys < payload.json
+```
+
 ### csv-select
 
 Extract selected columns from a CSV file or from standard input.
