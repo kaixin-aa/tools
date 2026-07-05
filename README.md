@@ -40,6 +40,14 @@ file-hash README.md
 python -m daily_tools.file_hash --algorithm md5 README.md TOOL_INDEX.md
 ```
 
+### course-anonymizer
+
+Create an anonymized copy of a course-material directory before publishing it.
+
+```bash
+python -m course_anonymizer sanitize "path/to/course" --config course-anonymizer/privacy-map.example.json --output "path/to/sanitized-course" --report privacy_report.json
+```
+
 ### text-stats
 
 Summarize text from one or more files, or from standard input.

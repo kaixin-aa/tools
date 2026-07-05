@@ -1,0 +1,29 @@
+{
+  "replacements": [
+    {
+      "label": "student_name",
+      "source": "班操",
+      "replacement": "匿名同学"
+    },
+    {
+      "label": "student_id",
+      "source": "2210101039",
+      "replacement": "0000000000"
+    },
+    {
+      "label": "office_author",
+      "source": "kaixin ban",
+      "replacement": "anonymous author"
+    },
+    {
+      "label": "classmate_name",
+      "source": "陈丁",
+      "replacement": "匿名同学"
+    },
+    {
+      "label": "classmate_id",
+      "source": "2210101042",
+      "replacement": "0000000000"
+    }
+  ]
+}
