@@ -21,9 +21,13 @@ test = [
 [project.scripts]
 csv-select = "daily_tools.csv_select:main"
 course-anonymizer = "course_anonymizer.cli:main"
+course-clean = "course_clean.cli:main"
 file-hash = "daily_tools.file_hash:main"
 json-format = "daily_tools.json_format:main"
 text-stats = "daily_tools.text_stats:main"
+
+[tool.setuptools.packages.find]
+include = ["course_anonymizer*", "course_clean*", "daily_tools*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

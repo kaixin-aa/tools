@@ -62,6 +62,19 @@ Create an anonymized copy of a course-material directory before publishing it.
 python -m course_anonymizer sanitize "path/to/course" --config course-anonymizer/privacy-map.example.json --output "path/to/sanitized-course" --report privacy_report.json
 ```
 
+### course-clean
+
+Scan a course-material directory or create a cleaned copy without generated
+files, build outputs, dependency folders, IDE metadata, and large files.
+
+扫描课程资料目录，或生成清理后的副本，跳过编译产物、依赖目录、IDE 元数据和
+过大的文件。源目录不会被修改。
+
+```bash
+python -m course_clean scan "path/to/course" --report cleanup_report.json
+python -m course_clean copy "path/to/course" --output "path/to/cleaned-course" --report cleanup_report.json
+```
+
 ### text-stats
 
 Summarize text from one or more files, or from standard input.
