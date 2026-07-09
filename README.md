@@ -38,6 +38,8 @@ Extract selected columns from a CSV file or from standard input.
 ```bash
 csv-select name email --file contacts.csv
 python -m daily_tools.csv_select city country --file addresses.csv --delimiter ";"
+python -m daily_tools.csv_select 3 1 --by-index --no-header --file rows.csv
+python -m daily_tools.csv_select name city --file contacts.csv --output selected.csv
 ```
 
 ### file-hash
