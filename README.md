@@ -77,6 +77,19 @@ python -m course_clean scan "path/to/course" --report cleanup_report.json
 python -m course_clean copy "path/to/course" --output "path/to/cleaned-course" --report cleanup_report.json
 ```
 
+### word-to-pdf
+
+Recursively convert Word documents to PDFs while preserving relative directory
+paths. The output directory contains only generated PDFs, and the source files
+are not modified.
+
+递归把课程目录中的 Word 文档转换为 PDF，并保留相对目录结构。输出目录只包含
+生成的 PDF，源文件不会被修改。
+
+```bash
+python -m word_to_pdf convert "path/to/course" --output "path/to/course-pdfs" --report conversion_report.json
+```
+
 ### text-stats
 
 Summarize text from one or more files, or from standard input.

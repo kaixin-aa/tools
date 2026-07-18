@@ -25,9 +25,13 @@ course-clean = "course_clean.cli:main"
 file-hash = "daily_tools.file_hash:main"
 json-format = "daily_tools.json_format:main"
 text-stats = "daily_tools.text_stats:main"
+word-to-pdf = "word_to_pdf.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["course_anonymizer*", "course_clean*", "daily_tools*"]
+include = ["course_anonymizer*", "course_clean*", "daily_tools*", "word_to_pdf*"]
+
+[tool.setuptools.package-data]
+word_to_pdf = ["*.ps1"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
